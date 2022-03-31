@@ -2,9 +2,12 @@
     font-family: 'Press Start 2P', cursive;
 }
 
-/* body {
-    background-color: rgb(236, 245, 206);
-} */
+body {
+    /* background-color: rgb(236, 245, 206); */
+    background-image: linear-gradient(to bottom right, rgb(184, 255, 71), green);
+    background-repeat: no-repeat;
+    height: 100vh;
+}
 
 #container {
     height: 100%;
@@ -17,6 +20,7 @@
 }
 
 .grid {
+    background: white;
     margin-top: 20px;
     border: 2px solid black;
     height: 400px;
@@ -41,4 +45,9 @@
     font-size: 16px;
     padding: 15px 30px;
     cursor: pointer;
+    outline: 2px outset black;
+}
+
+h3 {
+    text-shadow: 0 0 30px black;
 }
