@@ -1,5 +1,8 @@
 * {
     font-family: 'Press Start 2P', cursive;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -11,7 +14,6 @@ body {
 
 #container {
     height: 100%;
-    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -23,8 +25,8 @@ body {
     background: white;
     margin-top: 20px;
     border: 2px solid black;
-    height: 400px;
-    width: 200px;
+    height: 404px;
+    width: 204px;
     /* background-color: yellow; */
     display: flex;
     flex-wrap: wrap;
@@ -36,7 +38,8 @@ body {
 }
 
 .tetromino {
-    background-color: blue;
+    background-color: rgb(151, 20, 227);
+    border: 1px outset aliceblue;
     /* outline: 2px solid white; */
 }
 
@@ -46,8 +49,13 @@ body {
     padding: 15px 30px;
     cursor: pointer;
     outline: 2px outset black;
+    border-radius: 10px;
+}
+#start-btn:hover{
+    box-shadow: 2px 2px 20px black;
 }
 
 h3 {
-    text-shadow: 0 0 30px black;
+    text-shadow: 1px 1px 30px black;
+    margin: 20px auto;
 }

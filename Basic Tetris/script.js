@@ -73,13 +73,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Assign function to keyCodes
     function control(e) {
-        if (e.keyCode === 37) {
+        if (e.keyCode === 37 || e.keyCode === 65) {
             moveLeft();
         }
         else if (e.keyCode === 38) {
             //rotate();
         }
-        else if (e.keyCode === 39) {
+        else if (e.keyCode === 39 || e.keyCode === 68) {
             moveRight();
         }
         else if (e.keyCode === 40) {
