@@ -76,8 +76,8 @@ document.addEventListener('DOMContentLoaded', () => {
         if (e.keyCode === 37 || e.keyCode === 65) {
             moveLeft();
         }
-        else if (e.keyCode === 38) {
-            //rotate();
+        else if (e.keyCode === 38 || e.keyCode === 87) {
+            rotate();
         }
         else if (e.keyCode === 39 || e.keyCode === 68) {
             moveRight();
@@ -134,6 +134,17 @@ document.addEventListener('DOMContentLoaded', () => {
         if (current.some(index => squares[currentPosition + index].classList.contains('taken'))) {
             currentPosition -= 1;
         }
+        draw();
+    }
+
+    // Rotate the tetromino
+    function rotate() {
+        undraw();
+        currentRotation++;
+        if (currentRotation === current.length) { // if the current rotation gets to 4, get it back to 0
+            currentRotation = 0;
+        }
+        current = theTetrominoes[random][currentRotation];
         draw();
     }
 })
