@@ -7,9 +7,25 @@
 
 body {
     /* background-color: rgb(236, 245, 206); */
-    background-image: linear-gradient(to bottom right, rgb(184, 255, 71), green);
+    background-image: linear-gradient(to right, rgb(139, 210, 25), green);
+    background-size: 400% 400%;
     background-repeat: no-repeat;
+    animation: animate-bg 10s infinite ease-in-out;
     height: 100vh;
+}
+
+@keyframes animate-bg {
+    0% {
+        background-position: 0 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0 50%;
+    }
 }
 
 #container {
@@ -51,7 +67,8 @@ body {
     outline: 2px outset black;
     border-radius: 10px;
 }
-#start-btn:hover{
+
+#start-btn:hover {
     box-shadow: 2px 2px 20px black;
 }
 
