@@ -31,7 +31,7 @@ body {
 #container {
     height: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     flex-direction: column;
     flex-wrap: wrap;
@@ -59,7 +59,7 @@ body {
     /* outline: 2px solid white; */
 }
 
-#start-btn {
+button {
     background-color: #4caf50;
     font-size: 16px;
     padding: 15px 30px;
@@ -68,11 +68,50 @@ body {
     border-radius: 10px;
 }
 
-#start-btn:hover {
+button:hover {
     box-shadow: 2px 2px 20px black;
 }
 
-h3 {
+.score {
     text-shadow: 1px 1px 30px black;
-    margin: 20px auto;
+    margin: 26px auto;
+}
+
+.mini-grid {
+    width: 80px;
+    height: 80px;
+    background-color: red;
+    position: relative;
+    top: -350px;
+    left: 175px;
+}
+
+footer {
+    background: black;
+    color: white;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    padding: 4px;
+}
+
+#instructions {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    margin: 20px;
+}
+
+#Cheat {
+    position: absolute;
+    left: 50px;
+    top: 60px;
+    margin: 20px;
+    resize: both;
+    overflow: auto;
+}
+
+a {
+    text-decoration: none;
+    color: black;
 }

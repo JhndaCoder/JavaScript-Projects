@@ -15,7 +15,7 @@
 
 <body>
     <div id="container">
-        <h3 style="color: aliceblue;">Score: <span id="score">0</span></h3>
+        <h3 class="score" style="color: aliceblue;">Score: <span id="score">0</span></h3>
         <button id="start-btn">Start/Pause</button>
         <div class="grid">
             <div></div>
@@ -230,7 +230,36 @@
             <div class="taken"></div>
             <div class="taken"></div>
         </div>
+
+        <!-- Mini Grid for next tetromino display -->
+        <div class="mini-grid">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <footer>Made by copying code from tutorial by JhndaCoder</footer>
     </div>
+    <!-- <button class="extra" id="instructions"> <a href="Cheat.html">Instructions</a> </button> -->
+    <form method="get" action="instructions.html">
+        <button type="submit" id="instructions" formtarget="blank">Instructions</button>
+    </form>
+    <!-- <button class="extra" id="Cheat">Cheat <Code></Code></button> -->
+    <form method="get" action="Cheat.html">
+        <button type="submit" id="Cheat" formtarget="blank">Cheat</button>
+    </form>
 </body>
 
 </html>
