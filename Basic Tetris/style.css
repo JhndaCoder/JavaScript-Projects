@@ -108,8 +108,6 @@ footer {
     left: 0px;
     top: 0px;
     margin: 20px;
-    resize: both;
-    overflow: auto;
 }
 
 #Cheat {
@@ -117,6 +115,4 @@ footer {
     left: 50px;
     top: 60px;
     margin: 20px;
-    resize: both;
-    overflow: auto;
 }
