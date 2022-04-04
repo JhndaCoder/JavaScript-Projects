@@ -87,3 +87,19 @@ header {
     text-align: center;
     margin: 1em;
 }
+
+footer {
+    background-color: white;
+    font-family: 'Asap', sans-serif;
+    color: #25272e;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+@media only screen and (max-width: 563px) {
+    footer {
+        position: static;
+    }
+}
