@@ -1,12 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
     <title>Random Password Generator</title>
 </head>
+
 <body>
-    
+    <h1>Random Password Generator</h1>
+    <h3>Click on the button to generate a random password</h3>
+    <button onclick="Run()">Click Here</button>
+    <div>
+        <p id="pass"></p>
+        </div>
+
+        <script>  
+            var el_down = document.getElementById("pass");   
+            function generateP() {  
+              var pass = '';  
+              var str = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ' +   
+                  'abcdefghijklmnopqrstuvwxyz0123456789@#$';  
+              for (i = 1; i <= 8; i++) {  
+                var char = Math.floor(Math.random()  
+                      * str.length + 1);  
+                pass += str.charAt(char)  
+              }  
+              return pass;  
+            }  
+            function Run() {  
+              el_down.innerHTML = generateP();  
+            }  
+          </script>
 </body>
+
 </html>
