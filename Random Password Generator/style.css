@@ -3,7 +3,7 @@ body {
 }
 
 #main-container {
-    width: 50%;
+    width: 75%;
     color: white;
     background: rgba(255, 255, 255, 0.3);
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
@@ -15,9 +15,9 @@ body {
 
 #pass-box {
     /* border: 1px solid red; */
-    width: 50%;
+    width: 75%;
     position: relative;
-    left: 25%;
+    left: 12.5%;
     background: rgba(0, 0, 0, 0.55);
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
     backdrop-filter: blur(20px);
@@ -26,8 +26,20 @@ body {
     border: 1px solid rgba(255, 255, 255, 0.18);
     font-size: 1.5em;
 }
-button{
+
+button {
     background: #000;
     color: white;
     border-radius: 10px;
+}
+
+@media (min-width: 600px) {
+    #main-container {
+        width: 50%;
+    }
+
+    #pass-box{
+        width: 50%;
+        left: 25%;
+    }
 }
