@@ -1,12 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
     <title>BMI Calculator</title>
 </head>
+
 <body>
-    
+    <h3><b>B</b>ody <b>M</b>ass <b>I</b>ndex</h3>
+    <form class="form" id="form" onsubmit="return validateForm()"></form>
+
+    <div class="row-one">
+        <input type="text" id="age" class="text-imput" autocomplete="off" required>
+        <p class="text"><label class="container">
+                <input type="radio" name="radio" id="f">
+                <p class="text">Female</p>
+                <span class="checkmark"></span>
+            </label>
+
+            <label class="container">
+                <input type="radio" name="radio" id="m">
+                <p class="text">Male</p>
+            </label>
+        </p>
+    </div>
+
+    <div class="row-two">
+        <input type="text" name="" id="height" class="text-input" autocomplete="off" required>
+        <p class="text">Height (cm)</p>
+        <input type="text" name="" id="weight" class="text-input" autocomplete="off" required>
+        <p class="text">Weight (kg)</p>
+    </div>
+
+    <Button id="submit" type="button">Submit</Button>
+
+
 </body>
+
 </html>
